@@ -10,12 +10,25 @@ namespace StudyCSharp
         //和方法Publish()
         private string Tittle { get; set; }
         private string Body { get; set; }
-        private int reward { get; set; }
+        private int _reward;
+        public int reward
+        {
+            get { return _reward; }
+            set
+            {
+                if (value < 0)
+                {
+                    _reward = 0;
+                }
+                _reward = value;
+            }
+        }
         private DateTime PublishDateTime { get; set; }
         private User Author { get; set; }
 
-        public void Publish() { 
-            
+        public void Publish()
+        {
+
         }
     }
 }
