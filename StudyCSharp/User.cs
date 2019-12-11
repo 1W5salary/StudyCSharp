@@ -10,34 +10,23 @@ namespace StudyCSharp
         private int UserId { get; set; }
 
         //如果user.Name为“admin”，输入时修改为“系统管理员”
-        private string _UserName;
-        private string UserName
+        private string _Name;
+        public string Name
         {
-            get { return _UserName; }
+            get { return _Name; }
             set
             {
                 if (value == "admin")
                 {
-                    _UserName = "系统管理员";
+                    Name = "系统管理员";
                 }
                 else {
-                    _UserName = value;
+                    Name = value;
                 }
             }
         }
-        //user.Password在类的外部只能改不能读
-        private string _Password;
-        public string Password
-        {
-            private get
-            {
-                return _Password;
-            }
-            set
-            {
-                _Password = value;
-            }
-        }
+
+        public string Password { private get; set; }
         User InvitedBy { get; set; }
 
         public void Register(User user)
