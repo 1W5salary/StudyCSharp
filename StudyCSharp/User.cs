@@ -18,7 +18,7 @@ namespace StudyCSharp
             {
                 if (value == "admin")
                 {
-                    Name = "系统管理员";
+                    _Name = "系统管理员";
                 }
                 else {
                     Name = value;

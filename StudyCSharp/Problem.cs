@@ -20,7 +20,10 @@ namespace StudyCSharp
                 {
                     _reward = 0;
                 }
-                _reward = value;
+                else
+                {
+                    _reward = value;
+                }
             }
         }
         private DateTime PublishDateTime { get; set; }
