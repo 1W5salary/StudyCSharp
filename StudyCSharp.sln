@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyCSharp", "StudyCSharp\StudyCSharp.csproj", "{7A9CFB28-D617-45C5-A6D4-E6FB90FD63C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyCSharpTests1", "StudyCSharpTests1\StudyCSharpTests1.csproj", "{783BC9B2-6BFD-4FB4-92BF-D77FCC2C820C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudyCSharpTests1", "StudyCSharpTests1\StudyCSharpTests1.csproj", "{783BC9B2-6BFD-4FB4-92BF-D77FCC2C820C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

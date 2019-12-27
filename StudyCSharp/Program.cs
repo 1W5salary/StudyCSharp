@@ -6,7 +6,8 @@ namespace StudyCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Content problem = new Problem(1);
+            problem.Publish();  
         }
     }
 }
