@@ -7,7 +7,7 @@ namespace StudyCSharp
     sealed public class User
     {
         //注册/登录功能，定义一个User类，包含字段：Name（用户名）、Password（密码）和 邀请人（InvitedBy），和方法：Register()、Login()
-        private int UserId { get; set; }
+        public int UserId { get; set; }
 
         //如果user.Name为“admin”，输入时修改为“系统管理员”
         private string _Name;
@@ -25,6 +25,8 @@ namespace StudyCSharp
                 }
             }
         }
+
+        public int HelpMoney { get; set; }
 
         public string Password { private get; set; }
         User InvitedBy { get; set; }

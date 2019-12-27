@@ -8,6 +8,7 @@ namespace StudyCSharp
     {
         public override void Publish()
         {
+            Author.HelpMoney = Author.HelpMoney - 1;
             Console.WriteLine("提交一个问题");
         }
         public override void IsKind()

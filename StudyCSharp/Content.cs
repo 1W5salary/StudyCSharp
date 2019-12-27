@@ -34,10 +34,12 @@ namespace StudyCSharp
         private DateTime CreateDateTime { get; set; }
         public DateTime PublishDateTime { get; }
         public User Author { get; set; }    
-        public int BangMoney { get; set; }
 
-        virtual public void Publish() { }
         virtual public void IsKind() { 
+        }
+        virtual public void Publish()
+        {
+
         }
     }
 }

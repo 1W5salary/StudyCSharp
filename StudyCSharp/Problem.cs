@@ -14,8 +14,10 @@ namespace StudyCSharp
             this.reward = reward;
         }
 
+       
         public override void Publish()
         {
+            Author.HelpMoney = Author.HelpMoney - reward;
             Console.WriteLine("提交一个问题");
         }
         public override void IsKind()

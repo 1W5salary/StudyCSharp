@@ -7,7 +7,8 @@ namespace StudyCSharp
         static void Main(string[] args)
         {
             Content problem = new Problem(1);
-            problem.Publish();  
+            ContentService service = new ContentService();
+            service.Publish(problem);  
         }
     }
 }
