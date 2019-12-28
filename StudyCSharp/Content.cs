@@ -6,7 +6,7 @@ namespace StudyCSharp
 {
     //观察一起帮的求助（Problem）、文章（Article）和意见建议（Suggest），根据他们的特点，抽象出一个父类：内容（Content）
     //Content中有一个字段：kind，记录内容的种类（problem/article/suggest等），只能被子类使用
-    public abstract class Content
+    public abstract class Content:Agree
     {
         public Content(){
             IsKind();
@@ -33,13 +33,29 @@ namespace StudyCSharp
         }
         private DateTime CreateDateTime { get; set; }
         public DateTime PublishDateTime { get; }
-        public User Author { get; set; }    
+        public User Author { get; set; }
+        public int Agree { get; set; }
+
+
+
 
         virtual public void IsKind() { 
         }
         virtual public void Publish()
         {
 
+        }
+
+        public void AddAgree()
+        {
+            Agree++;
+            Author.HelpNum++;
+        }
+
+        public void Disagree()
+        {
+            Agree--;
+            Author.HelpNum--;
         }
     }
 }

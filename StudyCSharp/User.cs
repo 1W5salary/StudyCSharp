@@ -27,6 +27,7 @@ namespace StudyCSharp
         }
 
         public int HelpMoney { get; set; }
+        public int HelpNum { get; set; }
 
         public string Password { private get; set; }
         User InvitedBy { get; set; }
