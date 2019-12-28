@@ -13,6 +13,8 @@ namespace StudyCSharp
             IsKind();
             this.reward = reward;
         }
+        public Problem() { 
+        }
 
        
         public override void Publish()
