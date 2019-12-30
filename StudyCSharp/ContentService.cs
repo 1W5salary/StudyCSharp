@@ -9,7 +9,16 @@ namespace StudyCSharp
         //public ;
         public void Publish(Content content)
         {
-            content.Publish();
+            try
+            {
+                content.Publish();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }

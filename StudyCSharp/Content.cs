@@ -8,13 +8,21 @@ namespace StudyCSharp
     //Content中有一个字段：kind，记录内容的种类（problem/article/suggest等），只能被子类使用
     public abstract class Content : Agree
     {
-        public Content()
+        //内容（Content）发布（Publish）的时候检查其作者（Author）是否为空，如果为空抛出“参数为空”异常
+        public Content(User user)
         {
+            if (user==null)
+            {
+                throw new ArgumentNullException();
+            }
+            Author = user;
             IsKind();
         }
+
         protected int Id;
         protected string Kind;
         public string _Tittle;
+
         public string Tittle
         {
             get { return _Tittle = Tittle; }
