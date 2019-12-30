@@ -28,6 +28,7 @@ namespace StudyCSharp
         }
         public string Body { get; set; }
         protected int _reward;
+        //修改之前的属性验证：problem.Reward为负数时直接抛出“参数越界”异常
         public int reward
         {
             get { return _reward; }
@@ -35,7 +36,7 @@ namespace StudyCSharp
             {
                 if (value < 0)
                 {
-                    _reward = 0;
+                    throw new ArgumentOutOfRangeException();
                 }
                 else
                 {
